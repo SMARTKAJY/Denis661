@@ -1,0 +1,33 @@
+#include<iostream>
+int main(){
+int a;
+int b;
+int c;
+std::cout<<"premier côté:"<<std::endl;
+std::cin>>a;
+std::cout<<"deuxieme côté:"<<std::endl;
+std::cin>>b;
+std::cout<<"troisieme côté:"<<std::endl;
+std::cin>>c;
+if(a+b<c||a+c<b||b+c<a){
+    std::cout<<"invalidé"<<std::endl;
+}else{
+    if (a==b&&b==c&&a==c){
+        std::cout<<"equilaterale"<<std::endl;
+    }else{
+        if(a==b||b==c||c==a){
+            std::cout<<"isociele"<<std::endl;
+        }else{
+            std::cout<<"scalene"<<std::endl;
+        }
+    }
+}
+return 0;
+if(a^2+b^2==c^2||a^2+c^2==b^2||b^2+c^2==a^2){
+    std::cout<<" et aussi rectengle"<<std::endl;
+}else{
+}
+return 0;
+}
+
+
