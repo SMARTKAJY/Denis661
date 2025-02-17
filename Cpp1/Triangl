@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+int main(){
+int a,b,c;
+cout<<"premier côté:"<<endl;
+cin>>a;
+cout<<"deuxieme côté:"<<endl;
+cin>>b;
+cout<<"troisieme côté:"<<endl;
+cin>>c;
+if(a+b<c||a+c<b||b+c<a){
+    cout<<"invalidé"<<endl;
+}else{
+    if (a==b&&b==c&&a==c){
+        cout<<"equilaterale"<<endl;
+    }else{
+        if(a==b||b==c||c==a){
+            cout<<"isociele"<<endl;
+        }else{
+            cout<<"scalene"<<endl;
+        }
+    }
+}
+return 0;
+if(a>b&&a>c){
+    if((a^2)==(b^2)+(c^2)){
+        cout<<"en plus rectangle"<<endl;
+    }else{
+    }
+}if(b>a&&b>c){
+      if((b^2)==(a^2)+(c^2)){
+        cout<<"en plus rectangle"<<endl;
+    }else{
+    }
+}if(c>a&&c>b){
+      if((c^2)==(a^2)+(b^2)){
+        cout<<"en plus rectangle"<<endl;
+    }else{
+    }
+}
+return 0;
+}
+ 
+ 
+
+
+        
+
+   
+        
